@@ -1,4 +1,4 @@
-# 🎯 [Nom du Pattern] - [Nom du Use Case]
+# 🎯 Repository Pattern + Specification Pattern - DOCUMENT MANAGEMENT SYSTEM (DMS)
 
 [![PHP Version](https://img.shields.io/badge/php-%5E8.2-blue)](https://www.php.net/)
 [![Symfony Version](https://img.shields.io/badge/symfony-7.3-black)](https://symfony.com/)
@@ -7,14 +7,14 @@
 
 ## 📖 Contexte
 
-**Design Pattern étudié :** [Nom du Pattern]  
-**Domaine métier :** [E-commerce / SaaS / Finance / etc.]  
-**Problème résolu :** [Décrire en 1-2 phrases le problème métier]
+**Design Pattern étudié :** Repository Pattern + Specification Pattern  
+**Domaine métier :** DMS (Document Management System, SAS)   
+**Problème résolu :** DocHub, une plateforme SaaS de gestion documentaire pour entreprises. Les clients stockent des milliers de documents (contrats, factures, rapports, présentations)
 
 ## 🎓 Objectifs pédagogiques
 
-- Comprendre le pattern [X] et ses cas d'usage
-- Appliquer les principes SOLID (notamment [principe pertinent])
+- Comprendre le pattern Repository et ses cas d'usage
+- Appliquer les principes SOLID
 - Structurer une application en Clean Architecture
 - Écrire des tests unitaires robustes
 
@@ -32,15 +32,15 @@ src/
 
 ### Décisions d'architecture
 
-- [ADR-001](docs/ADR/001-why-this-pattern.md) : Pourquoi ce pattern ici ?
+- [ADR-001](docs/ADR/003-repository-specification-pattern.md) : Pourquoi ce pattern ici ?
 - Voir le dossier `docs/ADR/` pour toutes les décisions
 
 ## 🚀 Installation
 
 ```bash
 # Cloner le projet
-git clone [url-du-repo]
-cd [nom-du-repo]
+git clone https://github.com/abenali/repository-pattern-dms.git
+cd repository-pattern-dms
 
 # Démarrer Docker
 docker-compose up -d
