@@ -6,9 +6,6 @@ use App\Domain\Entity\Document;
 
 class FileTypeSpecification implements SpecificationInterface
 {
-    /**
-     * @param string $fileType
-     */
     public function __construct(private string $fileType)
     {
     }

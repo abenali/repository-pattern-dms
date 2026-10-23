@@ -32,6 +32,9 @@ final class OrSpecification implements SpecificationInterface
         $visitor->visitOr($this);
     }
 
+    /**
+     * @return array<int, SpecificationInterface>
+     */
     public function getSpecifications(): array
     {
         return $this->specifications;

@@ -20,7 +20,7 @@ final class CreatedBeforeSpecification implements SpecificationInterface
 
     public function accept(SpecificationVisitorInterface $visitor): void
     {
-        $visitor->visitCreatedAfter($this);
+        $visitor->visitCreatedBefore($this);
     }
 
     public function getDate(): \DateTimeImmutable

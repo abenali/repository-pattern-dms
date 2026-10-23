@@ -6,9 +6,7 @@ namespace App\Tests\Unit\Domain\Specification;
 
 use App\Domain\Entity\Document;
 use App\Domain\Entity\User;
-use App\Domain\Specification\AuthorSpecification;
 use App\Domain\Specification\FileTypeSpecification;
-use App\Domain\Specification\StatusSpecification;
 use App\Domain\ValueObject\DocumentStatus;
 use PHPUnit\Framework\TestCase;
 
