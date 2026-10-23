@@ -54,8 +54,8 @@ final class DocumentController extends AbstractController
             // 2. Extract pagination and sorting
             $orderBy = $request->query->get('orderBy');
             $orderDirection = strtoupper($request->query->get('orderDirection', 'ASC'));
-            $page = max(1, (int) $request->query->get('page', 1));
-            $limit = min(100, max(1, (int) $request->query->get('limit', 20)));
+            $page = max(1, (int) $request->query->get('page', '1'));
+            $limit = min(100, max(1, (int) $request->query->get('limit', '20')));
 
             // 3. Create command
             $command = new SearchDocumentsCommand(

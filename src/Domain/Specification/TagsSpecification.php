@@ -26,6 +26,9 @@ final class TagsSpecification implements SpecificationInterface
         $visitor->visitTags($this);
     }
 
+    /**
+     * @return array<int, string>
+     */
     public function getTags(): array
     {
         return $this->tags;

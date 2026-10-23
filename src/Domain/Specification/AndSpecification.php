@@ -32,6 +32,9 @@ final class AndSpecification implements SpecificationInterface
         $visitor->visitAnd($this);
     }
 
+    /**
+     * @return array<int, SpecificationInterface>
+     */
     public function getSpecifications(): array
     {
         return $this->specifications;
